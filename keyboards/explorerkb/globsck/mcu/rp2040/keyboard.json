@@ -22,7 +22,7 @@
     {
         "direct":
         [
-            ["GP7", "GP8", "GP9", "GP21", "GP23", "GP20" ]
+            ["GP5", "GP7", "GP10", "GP12", "GP6", "GP11" ]
         ]
     },
     "layout": "LAYOUT",
