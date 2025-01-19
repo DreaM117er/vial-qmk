@@ -114,3 +114,7 @@ user_song_list.h
 compile_commands.json
 .clangd/
 .cache/
+keyboards/explorerkb/globsck/globsck.c
+keyboards/explorerkb/globsck/rules.mk
+keyboards/explorerkb/globsck/mcu/rp2040/keyboard.json
+keyboards/explorerkb/globsck/mcu/rp2040/config.h
