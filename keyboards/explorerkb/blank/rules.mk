@@ -3,7 +3,8 @@ ENCODER_ENABLE = yes
 ENCODER_MAP_ENABLE = yes
 
 POINTING_DEVICE_ENABLE = yes
-POINTING_DEVICE_DRIVER = cirque_pinnacle_i2c
+POINTING_DEVICE_DRIVER = azoteq_iqs5xx
+POINTING_DEVICE_DRIVER = cirque_pinnacle_i2c #defalt to make/flash
 I2C_DRIVER_REQUIRED = yes
 
 OS_DETECTION_ENABLE = yes

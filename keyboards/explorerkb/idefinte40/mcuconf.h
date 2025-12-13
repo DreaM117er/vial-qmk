@@ -15,27 +15,16 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+
 #pragma once
 
-#define DEBOUNCE 5
+#include_next <mcuconf.h>
 
-/* Pointing Device Setting*/
-#define AZOTEQ_IQS5XX_TPS65
-#define AZOTEQ_IQS5XX_PRESS_AND_HOLD_ENABLE 1
-#define AZOTEQ_IQS5XX_HOLD_TIME 300
-#define AZOTEQ_IQS5XX_SWIPE_INITIAL_TIME 150
-#define AZOTEQ_IQS5XX_SWIPE_INITIAL_DISTANCE 300
-#define SCROLL_SCALE_PERCENT 5
+#undef RP_I2C_USE_I2C0
+#define RP_I2C_USE_I2C0 TRUE
 
-/* I2C or SPI Setting*/
-#define I2C_DRIVER I2CD1
-#define I2C1_SCL_PIN GP15
-#define I2C1_SDA_PIN GP14
+//#undef RP_I2C_USE_I2C1
+//#define RP_I2C_USE_I2C1 TRUE
 
-/* Status LED Setting*/
-#define USB_LED_PIN GP2
-
-/* Encoders*/
-#define ENCODER_A_PINS { GP28, GP3 }
-#define ENCODER_B_PINS { GP27, GP1 }
-#define ENCODER_RESOLUTION 4
+#undef RP_SPI_USE_SPI0
+#define RP_SPI_USE_SPI0 TRUE

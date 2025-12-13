@@ -72,15 +72,14 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
             },
 };
 #endif
-#define SCROLL_SCALE_PERCENT 5
 
 int32_t scroll_amount_h = 0;
 int32_t scroll_amount_v = 0;
 
 report_mouse_t pointing_device_task_user(report_mouse_t mouse_report)
 {
-     scroll_amount_h += mouse_report.h * SCROLL_SCALE_PERCENT;
-     scroll_amount_v += mouse_report.v * SCROLL_SCALE_PERCENT;
+     scroll_amount_h += -mouse_report.h * SCROLL_SCALE_PERCENT;
+     scroll_amount_v += -mouse_report.v * SCROLL_SCALE_PERCENT;
      int8_t h = scroll_amount_h / 100;
      int8_t v = scroll_amount_v / 100;
      scroll_amount_h -= h*100;
@@ -90,4 +89,3 @@ report_mouse_t pointing_device_task_user(report_mouse_t mouse_report)
      mouse_report.v = v;
      return mouse_report;
 }
-

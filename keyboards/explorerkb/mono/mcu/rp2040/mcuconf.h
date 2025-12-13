@@ -1,5 +1,5 @@
 /*
- * Copyright 2025 @DreaM117er
+ * Copyright 2024 @DreaM117er
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,5 +20,5 @@
 
 #include_next <mcuconf.h>
 
-#undef RP_I2C_USE_I2C0
-#define RP_I2C_USE_I2C0 1
+#undef RP_I2C_USE_I2C1
+#define RP_I2C_USE_I2C1 TRUE

@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "compare": "c",
+        "cstdint": "c",
+        "locale": "c",
+        "string": "c",
+        "bitset": "c",
+        "format": "c",
+        "chrono": "c",
+        "unordered_map": "c",
+        "cstdlib": "c"
+    }
+}

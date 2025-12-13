@@ -1,5 +1,5 @@
 /*
- * Copyright 2025 @DreaM117er
+ * Copyright 2024 @DreaM117er
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -15,19 +15,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+
 #pragma once
 
-#define DEBOUNCE 5
+#define HAL_USE_I2C TRUE
+// #define HAL_USE_SPI TRUE
 
-/* Pointing Device Setting*/
-#define AZOTEQ_IQS5XX_TPS65
-#define AZOTEQ_IQS5XX_PRESS_AND_HOLD_ENABLE 1
-#define AZOTEQ_IQS5XX_HOLD_TIME 300
-#define AZOTEQ_IQS5XX_SWIPE_INITIAL_TIME 150
-#define AZOTEQ_IQS5XX_SWIPE_INITIAL_DISTANCE 300
-
-/* I2C or SPI Setting*/
-#define I2C_DRIVER I2CD0
-#define I2C0_SCL_PIN GP1
-#define I2C0_SDA_PIN GP0
-
+#include_next <halconf.h>
