@@ -119,7 +119,7 @@
     },
     "ws2812":
     {
-        "pin": "GP5"
+        "pin": "GP4"
     },
     "rgb_matrix":
     {
