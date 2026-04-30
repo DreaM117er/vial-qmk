@@ -1,5 +1,5 @@
 /*
- * Copyright 2024 @DreaM117er
+ * Copyright 2026 @DreaM117er
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,33 +20,25 @@
 /* Set 0 if debouncing isn't needed */
 #define DEBOUNCE 5
 
-/* Main Keyboard Hand*/
-#define USE_SERIAL
+/* Serial Communication */
+#define SERIAL_USART_FULL_DUPLEX
+#define SERIAL_USART_TX_PIN GP0
+#define SERIAL_USART_RX_PIN GP1
+#define SERIAL_USART_PIN_SWAP   // Physical TX/RX no swapped, must enable this option
 #define SERIAL_USE_MULTI_TRANSACTION
 #define MASTER_RIGHT
 
 /* Pointing Device Setting*/
-// #ifdef POINTING_DEVICE_DRIVER_cirque_pinnacle_i2c //Main setup for Keyboard Mo
-    #define CIRQUE_PINNACLE_CURVED_OVERLAY
-    #define CIRQUE_PINNACLE_DIAMETER_MM 40
-    #define CIRQUE_PINNACLE_ATTENUATION EXTREG__TRACK_ADCCONFIG__ADC_ATTENUATE_2X
-    #define CIRQUE_PINNACLE_POSITION_MODE CIRQUE_PINNACLE_ABSOLUTE_MODE
-    #define CIRQUE_PINNACLE_ADDR 0x2A
-    #define POINTING_DEVICE_ROTATION_90
-    #define POINTING_DEVICE_GESTURES_SCROLL_ENABLE
-// #endif
-/* #ifdef POINTING_DEVICE_DRIVER_azoteq_iqs5xx //Main setup for Keyboard No
+#define SCROLL_SCALE_PERCENT 5
+#define SPLIT_POINTING_ENABLE
+#define POINTING_DEVICE_COMBINED
+
+/* AZOTEQ IQS5XX Setting*/
     #define AZOTEQ_IQS5XX_TPS43
     #define AZOTEQ_IQS5XX_PRESS_AND_HOLD_ENABLE 1
     #define AZOTEQ_IQS5XX_HOLD_TIME 300
     #define AZOTEQ_IQS5XX_SWIPE_INITIAL_TIME 150
     #define AZOTEQ_IQS5XX_SWIPE_INITIAL_DISTANCE 300
-    #define AZOTEQ_IQS5XX_ROTATION_180
-#endif
-*/
-#define SCROLL_SCALE_PERCENT 5
-#define SPLIT_POINTING_ENABLE
-#define POINTING_DEVICE_COMBINED
 
 /* I2C or SPI Setting*/
 #define I2C_DRIVER I2CD1

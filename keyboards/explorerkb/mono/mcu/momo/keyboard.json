@@ -3,15 +3,13 @@
     "manufacturer": "DreaM117er",
     "maintainer": "DreaM117er",
     "url": "",
-    "usb":
-    {
+    "usb": {
         "device_version": "2.0.0",
         "pid": "0x5647",
         "vid": "0xFEED"
     },
     "diode_direction": "COL2ROW",
-    "features":
-    {
+    "features": {
         "bootmagic": true,
         "command": false,
         "console": false,
@@ -19,21 +17,16 @@
         "mousekey": true,
         "nkro": true
     },
-    "split":
-    {
-        "enabled": true,
-        "soft_serial_pin": "GP0"
+    "split": {
+        "enabled": true
     },
-    "matrix_pins":
-    {
+    "matrix_pins": {
         "rows": ["GP28", "GP9", "GP8", "GP7", "GP6"],
         "cols": ["GP27", "GP26", "GP22", "GP20", "GP23", "GP21"]
     },
     "layout": "LAYOUT",
-    "layouts":
-    {
-        "LAYOUT":
-        {
+    "layouts": {
+        "LAYOUT": {
             "layout":
             [
                 {"matrix": [0, 0], "x": 0,"y": 0.63},
@@ -95,16 +88,14 @@
             ]
         }
     },
-    "rgblight":
-    {
+    "rgblight": {
         "led_count": 8,
         "split_count": [4, 4],
         "max_brightness": 120,
         "hue_steps": 10,
         "saturation_steps": 15,
         "brightness_steps": 15,
-        "animations":
-        {
+        "animations": {
             "breathing": true,
             "rainbow_mood": true,
             "rainbow_swirl": true,
@@ -117,15 +108,12 @@
             "twinkle": true
         }
     },
-    "ws2812":
-    {
+    "ws2812": {
         "pin": "GP4"
     },
-    "rgb_matrix":
-    {
+    "rgb_matrix": {
         "split_count": [4, 4],
-        "layout":
-        [
+        "layout": [
             {"matrix": [0, 0], "x": 81, "y": 60, "flags": 2},
             {"matrix": [1, 0], "x": 87, "y": 62, "flags": 2},
             {"matrix": [2, 0], "x": 95, "y": 63, "flags": 2},

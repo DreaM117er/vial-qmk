@@ -1,5 +1,5 @@
 /*
- * Copyright 2024 @DreaM117er
+ * Copyright 2026 @DreaM117er
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,7 +18,7 @@
 
 #pragma once
 
-#define HAL_USE_I2C TRUE
-// #define HAL_USE_SPI TRUE
+#include_next <mcuconf.h>
 
-#include_next <halconf.h>
+#undef RP_I2C_USE_I2C1
+#define RP_I2C_USE_I2C1 TRUE

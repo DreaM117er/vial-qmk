@@ -1,5 +1,5 @@
 /*
- * Copyright 2024 @DreaM117er
+ * Copyright 2026 @DreaM117er
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
